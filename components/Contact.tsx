@@ -11,14 +11,14 @@ export default function Contact() {
       icon: '💼',
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
-      href: 'https://linkedin.com/in/gautam-patil',
+      href: 'https://www.linkedin.com/in/gautam-patil-181999164',
       color: 'from-blue-900/30 to-cyan-900/30'
     },
     {
       icon: '🧑‍💻',
       label: 'GitHub',
       value: 'Check out my code',
-      href: 'https://github.com/gautam-patil',
+      href: 'https://github.com/patil-gau',
       color: 'from-purple-900/30 to-indigo-900/30'
     },
     {
