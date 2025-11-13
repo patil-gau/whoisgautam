@@ -26,7 +26,7 @@ export default function Portfolio() {
     {
       id: 1,
       title: 'Tech Content Reel',
-      url: 'https://www.instagram.com/reel/DOD0QH4E6VG/?igsh=MTVvcTFiYnYwbmMz',
+      url: 'https://www.instagram.com/reel/DOLzGdck177/?igsh=Y2F4c2s0bGVwZWxx',
       platform: 'Instagram',
       icon: '📱'
     },
@@ -40,14 +40,14 @@ export default function Portfolio() {
     {
       id: 3,
       title: 'Community Building',
-      url: 'https://www.instagram.com/reel/DPEM2IBk5wH/?igsh=MTVqa2Z0ZHV5MTdk',
+      url: 'https://www.instagram.com/reel/DOD0QH4E6VG/?igsh=MTVvcTFiYnYwbmMz',
       platform: 'Instagram',
       icon: '📱'
     },
     {
       id: 4,
       title: 'AI StartUp Ideas',
-      url: 'https://www.instagram.com/reel/DOLzGdck177/?igsh=Y2F4c2s0bGVwZWxx',
+      url: 'https://www.instagram.com/reel/DPEM2IBk5wH/?igsh=MTVqa2Z0ZHV5MTdk',
       platform: 'Instagram',
       icon: '📱'
     }
