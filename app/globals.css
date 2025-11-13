@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">🚀</text></svg>') 12 12, auto !important;
+}
+
+a:hover, button:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">🐛</text></svg>') 12 12, pointer !important;
+}
+
+body {
+  background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #F1F5F9;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: Monaco, Courier, monospace;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.console-text {
+  font-family: Monaco, 'Courier New', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(71, 85, 105, 0.5);
+  border-radius: 16px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .card {
+    border-radius: 20px;
+    padding: 2rem;
+  }
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cpu-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(30, 41, 59, 0.95);
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 2px solid #A855F7;
+  font-size: 0.7rem;
+  font-family: Monaco, monospace;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 160px;
+  color: #F1F5F9;
+}
+
+@media (min-width: 768px) {
+  .cpu-bar {
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    max-width: none;
+  }
+}
+
+.tooltip {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(30, 41, 59, 0.95);
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #EC4899;
+  font-size: 0.75rem;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  animation: float 3s ease-in-out infinite;
+  color: #F1F5F9;
+}
+
+@media (min-width: 768px) {
+  .tooltip {
+    bottom: 20px;
+    left: 20px;
+    right: auto;
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    max-width: 300px;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
